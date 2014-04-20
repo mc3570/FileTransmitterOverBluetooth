@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+    
+    <ImageButton 
+        android:id="@+id/ImageButton_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/blank"
+        />
+    
+    <ImageView
+        android:id="@+id/ImageView_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ImageButton_MoreOptions"
+        android:layout_toRightOf="@id/ImageButton_back"
+        android:layout_margin="5dp" >
+
+    </ImageView>
+    
+    <TextView
+        android:id="@+id/TextView_fileName"
+        android:layout_toRightOf="@id/ImageView_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        >
+    </TextView>
+    
+    <TextView
+    	android:id="@+id/TextView_typeName"
+    	android:layout_toRightOf="@id/TextView_fileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_margin="5dp"
+        >
+    </TextView>
+    
+    <ImageButton
+        android:id="@+id/ImageButton_MoreOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/more_option_icon_normal" />
+
+</RelativeLayout>

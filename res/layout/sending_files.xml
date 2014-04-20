@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/ImageView_line"
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="64dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#C0C0C0" />
+
+    <TextView
+        android:id="@+id/TextView_fileSending_fileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ImageView_line"
+        android:layout_alignLeft="@+id/ImageView_line"
+        android:layout_marginBottom="15dp"
+        android:textSize="20dp" />
+
+    <ProgressBar
+        android:id="@+id/ProgressBar_fileSending"
+        style="@style/MyProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageView_fileSending_receiver"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:layout_marginTop="133dp"
+        android:background="#C0C0C0"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/progress_horizontal1" />
+
+    <Button
+        android:id="@+id/button_sendingFiles_Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/ProgressBar_fileSending"
+        android:layout_below="@+id/ProgressBar_fileSending"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="63dp"
+        android:text="Cancel" />
+
+    <ImageView
+        android:id="@+id/ImageView_fileSending_sender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ProgressBar_fileSending"
+        android:layout_below="@+id/ImageView_line"
+        android:layout_marginTop="108dp"
+        android:background="@drawable/sender3" />
+
+    <ImageView
+        android:id="@+id/ImageView_fileSending_receiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ImageView_fileSending_sender"
+        android:layout_alignRight="@+id/ImageView_line"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/receiver3" />
+
+    <ImageView
+        android:id="@+id/ImageView_fileSending_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ImageView_fileSending_receiver"
+        android:layout_toLeftOf="@+id/ImageView_fileSending_receiver"
+        android:background="@drawable/arrows2" />
+
+</RelativeLayout>

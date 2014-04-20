@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name = "String_array_for_all">
+        <item >Open</item>
+        <item >Send</item>
+        <item >Edit</item>
+        <item >Property</item>
+        <item >Delete</item>
+    </string-array>
+    
+</resources>
